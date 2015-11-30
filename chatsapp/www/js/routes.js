@@ -17,9 +17,9 @@ function config ($stateProvider, $urlRouterProvider) {
     controller: 'ConfirmationCtrl'
   })
 
-  .state('login', {
-    url: '/login',
-    templateUrl: 'templates/login.html',
+  .state('inicio_secion', {
+    url: '/inicio_secion',
+    templateUrl: 'templates/inicio_secion.html',
     controller: 'LoginCtrl'
   })
 
@@ -59,5 +59,5 @@ function config ($stateProvider, $urlRouterProvider) {
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/chats');
+  $urlRouterProvider.otherwise('/inicio_secion');
 }
